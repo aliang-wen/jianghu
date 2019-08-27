@@ -1,0 +1,133 @@
+#aboutMyselfInfoId {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 335px);
+  .showMainPic {
+    height: 100vh;
+    background: rgb(204, 204, 204) url(~@/assets/image/public/richu.jpg) no-repeat fixed top;
+    .showPicClass {
+      background-color: rgba($color: #0000CD, $alpha: 0.5);
+      height: 100vh;
+      text-align: center;
+      .ivu-avatar-large {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        border-radius: 100px;
+        border: 8px solid rgba(255,255,255,.5);
+      }
+      .showBaseInfoClass {
+        color: #fff;
+        line-height: 6vh;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 10px;
+        ul{
+          li {
+            list-style: none;
+            font-family: "宋体";
+          }
+        }
+        .colorFontClass {
+          color: #E3872D;
+        }
+      }
+      .nextPageClass {
+        position: relative;
+        top: 32vh;
+        animation:mymove 2s infinite;
+        -webkit-animation:mymove 2s infinite; /* Safari 和 Chrome */
+        @keyframes mymove{
+          from {top: 32vh;}
+          to {top: 35vh;}
+        }
+        @-webkit-keyframes mymove /*Safari and Chrome*/{
+          from {top: 32vh;}
+          to {top: 35vh;}
+        }
+        a {
+          font-size: 26px;
+          color: #ccc;
+        }
+      }
+    }
+  }
+  .showMainPicTwo {
+    height: 100vh;
+    background: rgb(204, 204, 204) url(~@/assets/image/public/panyan.jpg) no-repeat fixed top;
+    .showPicClassTwo {
+      height: 100vh;
+      background-color: rgba($color: #333, $alpha: 0.6);
+      padding: 10px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      .describeMyselfClass::-webkit-scrollbar {
+        display: none;
+      }
+      .describeMyselfClass {
+        margin: auto;
+        margin-top: 10vh;
+        height: 80vh;
+        overflow: auto;
+        h3{
+          text-align: center;
+        }
+        div {
+          text-indent: 35px;
+        }
+      }
+      .activeShwoClass::-webkit-scrollbar {
+        display: none;
+      }
+      .activeShwoClass {
+        margin: auto;
+        margin-top: 10vh;
+        height: 80vh;
+        overflow: auto;
+        ul {
+          li {
+            list-style: none;
+          }
+        }
+      }
+      .nextPageClassTwo {
+        text-align: center;
+        position: relative;
+        animation:mymoveTwo 2s infinite;
+        -webkit-animation:mymoveTwo 2s infinite; /* Safari 和 Chrome */
+        @keyframes mymoveTwo{
+          from {top: 0vh;}
+          to {top: 1vh;}
+        }
+        @-webkit-keyframes mymoveTwo /*Safari and Chrome*/{
+          from {top: 0vh;}
+          to {top: 1vh;}
+        }
+        a {
+          font-size: 26px;
+          color: #ccc;
+        }
+      }
+    }
+  }
+  .showMainPicThree {
+    height: 100vh;
+    background: rgb(204, 204, 204) url(~@/assets/image/public/shangwu.jpg) no-repeat fixed top;
+    .showPicClassThree {
+      height: 100vh;
+      background-color: rgba($color: #FFFF66, $alpha: 0.6); 
+      .showMyselfClass {
+        margin-top: 10vh;
+        height: 80vh;
+        h1 {
+          text-align: center;
+        }
+        div {
+          color: #000;
+          text-indent: 35px;
+        }
+      }
+    }
+  }
+}

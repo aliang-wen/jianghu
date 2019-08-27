@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.aliangbok_dao.essaydao.EssayDao">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <!--这里的数据库的字段名字应该与我的实体类的字段名字相同 所以这里我就不再建立数据库和实体类字段的对应关系了-->
+    <resultMap id="essayDataId" type="com.aliang.aliangbok_entity.essayentity.EssayEntity">
+        <!--前面的是返回前台的，后面的是从数据中查询出来的-->
+        <result property="essayId" column="ESSAY_ID"/>
+        <result property="userId" column="USER_ID"/>
+        <result property="essayNum" column="ESSAY_NUM"/>
+        <result property="conText" column="CON_TEXT"/>
+        <result property="conTitle" column="CON_TITLE"/>
+        <result property="conType" column="CON_TYPE"/>
+        <result property="essaySeries" column="ESSAY_SERIES"/>
+        <result property="CarouselShow" column="CAROUSEL_SHOW"/>
+        <result property="showBox" column="SHOW_BOX"/>
+        <result property="readCount" column="READ_COUNT"/>
+        <result property="recomStart" column="RECOM_START"/>
+        <result property="createdData" column="CREATE_DATA"/>
+        <result property="updateData" column="UPDATE_DATA"/>
+        <result property="conFTitle" column="CON_F_TITLE"/>
+        <result property="conGText" column="CON_G_TEXT"/>
+        <result property="ariticleState" column="ARITICLE_STATE"/>
+        <result property="ariticlePrivate" column="ARITICLE_PRIVATE"/>
+        <result property="titlePpicture" column="TITLE_P_PICTURE"/>
+        <result property="essayFCuuId" column="ESSAY_F_CUUID"/>
+        <result property="createdData" column="CREATE_DATA"/>
+        <result property="updateData" column="UPDATE_DATA"/>
+        <association property="userInfo" resultMap="UserInfo"></association>
+    </resultMap>
+    <resultMap id="UserInfo" type="com.aliang.aliangbok_entity.userinfo.UserInfo">
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+        <id column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+        <id column="PASSWORD" jdbcType="VARCHAR" property="password" />
+        <id column="BIG_NAME" jdbcType="VARCHAR" property="bigName" />
+        <id column="USER_TEL" jdbcType="VARCHAR" property="userTel" />
+        <id column="ABOUT_MYSELF" jdbcType="VARCHAR" property="aboutMyself" />
+        <id column="QQ_NUMBER" jdbcType="VARCHAR" property="qqNumber" />
+        <id column="SEX" jdbcType="VARCHAR" property="sex" />
+        <id column="HOBBY" jdbcType="VARCHAR" property="hobby" />
+        <id column="USER_ADDRESS" jdbcType="VARCHAR" property="userAddress" />
+        <id column="LIMIT_LOGIN_NUM" jdbcType="NUMERIC" property="limitLoginNum" />
+        <id column="SHOW_MAIN_PAGE" jdbcType="NUMERIC" property="showMainPage" />
+    </resultMap>
+    <!--根据id查询单单条-->
+    <select id="findEssayById" parameterType="com.aliang.aliangbok_entity.essayentity.EssayEntity" resultMap="essayDataId">
+        SELECT
+          ESSAY_ID,
+          ESSAY_F_CUUID,
+          USER_ID,
+          ESSAY_NUM,
+          CON_TEXT,
+          CON_TITLE,
+          CON_TYPE,
+          ESSAY_SERIES,
+          CAROUSEL_SHOW,
+          SHOW_BOX,
+          READ_COUNT,
+          RECOM_START,
+          CREATE_DATA,
+          UPDATE_DATA,
+          CON_F_TITLE,
+          CON_G_TEXT,
+          ARITICLE_STATE,
+          ARITICLE_PRIVATE,
+          TITLE_P_PICTURE
+        FROM essay_list_table where ESSAY_ID = #{essayEntity.essayId}
+    </select>
+    <!--进行列表分页查询-->
+    <!--查询条件 编号 名字 再就是分页-->
+    <select id="findEssayList" parameterType="java.util.Map" resultMap="essayDataId">
+    SELECT * from (
+      SELECT * from (
+        SELECT
+          ESSAY_ID,
+          ESSAY_F_CUUID,
+          USER_ID,
+          ESSAY_NUM,
+          CON_TEXT,
+          CON_TITLE,
+          CON_TYPE,
+          ESSAY_SERIES,
+          CAROUSEL_SHOW,
+          SHOW_BOX,
+          READ_COUNT,
+          RECOM_START,
+          CREATE_DATA,
+          UPDATE_DATA,
+          CON_F_TITLE,
+          CON_G_TEXT,
+          ARITICLE_STATE,
+          ARITICLE_PRIVATE,
+          TITLE_P_PICTURE
+        FROM essay_list_table where null != ESSAY_NUM OR ESSAY_NUM != "") t
+      where t.ESSAY_NUM like CONCAT ("%",#{map.essayNum},"%") and t.CON_TITLE like CONCAT ("%",#{map.conTitle},"%")) t1
+    ORDER BY  t1.CREATE_DATA
+    </select>
+    <!--resultType  resultMap 一个是对应的 一个是类型 不能乱了-->
+    <select id="allEssayNum" parameterType="java.util.Map" resultType="java.lang.Integer">
+      SELECT count(1) from (
+        SELECT
+          ESSAY_ID,
+          ESSAY_F_CUUID,
+          USER_ID,
+          ESSAY_NUM,
+          CON_TEXT,
+          CON_TITLE,
+          CON_TYPE,
+          ESSAY_SERIES,
+          CAROUSEL_SHOW,
+          SHOW_BOX,
+          READ_COUNT,
+          RECOM_START,
+          CREATE_DATA,
+          UPDATE_DATA,
+          CON_F_TITLE,
+          CON_G_TEXT,
+          ARITICLE_STATE,
+          ARITICLE_PRIVATE,
+          TITLE_P_PICTURE
+        FROM essay_list_table where null != ESSAY_NUM OR ESSAY_NUM != "") t
+      where t.ESSAY_NUM like CONCAT ("%",#{map.essayNum},"%") and t.CON_TITLE like CONCAT ("%",#{map.conTitle},"%")
+    </select>
+    <update id="updateEssayById" parameterType="com.aliang.aliangbok_entity.essayentity.EssayEntity">
+        update essay_list_table set
+          ESSAY_ID = #{essayEntity.essayId},
+          ESSAY_F_CUUID = #{essayEntity.essayFCuuId},
+          USER_ID = #{essayEntity.userId},
+          ESSAY_NUM = #{essayEntity.essayNum},
+          CON_TEXT = #{essayEntity.conText},
+          CON_TITLE = #{essayEntity.conTitle},
+          CON_TYPE = #{essayEntity.conType},
+          ESSAY_SERIES = #{essayEntity.essaySeries},
+          CAROUSEL_SHOW = #{essayEntity.CarouselShow},
+          SHOW_BOX = #{essayEntity.showBox},
+          READ_COUNT = #{essayEntity.readCount},
+          RECOM_START = #{essayEntity.recomStart},
+          CON_F_TITLE = #{essayEntity.conFTitle},
+          CON_G_TEXT = #{essayEntity.conGText},
+          ARITICLE_STATE = #{essayEntity.ariticleState},
+          ARITICLE_PRIVATE = #{essayEntity.ariticlePrivate},
+          TITLE_P_PICTURE = #{essayEntity.titlePpicture}
+        where ESSAY_ID = #{essayEntity.oldEssayId}
+    </update>
+    <update id="updateEssayByIdChangeSwitch" parameterType="com.aliang.aliangbok_entity.essayentity.EssayEntity">
+        update essay_list_table set
+          CON_TYPE = #{essayEntity.conType},
+          CAROUSEL_SHOW = #{essayEntity.CarouselShow},
+          SHOW_BOX = #{essayEntity.showBox},
+          RECOM_START = #{essayEntity.recomStart},
+          ARITICLE_STATE = #{essayEntity.ariticleState},
+          ARITICLE_PRIVATE = #{essayEntity.ariticlePrivate}
+        where ESSAY_ID = #{essayEntity.essayId}
+    </update>
+    <insert id="addEssay" parameterType="com.aliang.aliangbok_entity.essayentity.EssayEntity" >
+        insert into essay_list_table(ESSAY_ID, USER_ID, ESSAY_F_CUUID) values (#{essayEntity.essayId},#{essayEntity.userId}, #{essayEntity.essayFCuuId})
+    </insert>
+    <delete id="delEssayById" parameterType="com.aliang.aliangbok_entity.essayentity.EssayEntity">
+        delete from essay_list_table where ESSAY_ID = #{essayEntity.essayId}
+    </delete>
+    <!--轮播框的查询-->
+    <select id="findEssayListOfCarousel" resultMap="essayDataId">
+        SELECT
+          ESSAY_ID,
+          CON_TITLE,
+          CON_TYPE,
+          READ_COUNT,
+          RECOM_START,
+          CON_F_TITLE,
+          CON_G_TEXT,
+          TITLE_P_PICTURE
+        FROM essay_list_table where CAROUSEL_SHOW = 'SWITCH_ON'
+          and (null != ESSAY_NUM OR ESSAY_NUM != "")
+          and ARITICLE_PRIVATE = 'SWITCH_OFF'
+          and ARITICLE_STATE = 'SWITCH_ON'
+    </select>
+    <select id="findEssayListOfShowBox" resultMap="essayDataId">
+        SELECT
+          ESSAY_ID,
+          CON_TITLE,
+          CON_TYPE,
+          READ_COUNT,
+          RECOM_START,
+          CON_F_TITLE,
+          CON_G_TEXT,
+          TITLE_P_PICTURE
+        FROM essay_list_table where SHOW_BOX = 'SWITCH_ON'
+          and (null != ESSAY_NUM OR ESSAY_NUM != "")
+          and ARITICLE_PRIVATE = 'SWITCH_OFF'
+          and ARITICLE_STATE = 'SWITCH_ON'
+    </select>
+    <!--根据博主推荐这里已经进行了分页-->
+    <select id="findEssayListPage" resultMap="essayDataId" parameterType="java.util.Map">
+        SELECT
+          ESSAY_ID,
+          CON_TITLE,
+          CON_TYPE,
+          READ_COUNT,
+          RECOM_START,
+          CON_F_TITLE,
+          CON_G_TEXT,
+          TITLE_P_PICTURE
+        FROM essay_list_table
+        <where>
+            (null != ESSAY_NUM OR ESSAY_NUM != "")
+            and ARITICLE_PRIVATE = 'SWITCH_OFF'
+            and ARITICLE_STATE = 'SWITCH_ON'
+            <if test="map.conType != null and map.conType != ''">
+                and CON_TYPE LIKE CONCAT('%',#{map.conType},'%')
+            </if>
+            <if test="map.essaySeries != null and map.essaySeries != ''">
+                and ESSAY_SERIES LIKE CONCAT('%',#{map.essaySeries},'%')
+            </if>
+            <if test="map.showOrder != null and map.showOrder != '' and map.showOrder == 'recomStart'">
+                order by RECOM_START desc
+            </if>
+            <if test="map.showOrder != null and map.showOrder != '' and map.showOrder == 'readCount'">
+                order by READ_COUNT desc
+            </if>
+            <if test="map.showOrder == null or map.showOrder == ''">
+                order by CREATE_DATA desc
+            </if>
+        </where>
+    </select>
+    <select id="findEssayListPageCount" resultType="java.lang.Integer" parameterType="java.util.Map">
+        SELECT
+        count(1)
+        FROM essay_list_table
+        <where>
+            (null != ESSAY_NUM OR ESSAY_NUM != "")
+            and ARITICLE_PRIVATE = 'SWITCH_OFF'
+            and ARITICLE_STATE = 'SWITCH_ON'
+            <if test="map.conType != null and map.conType != ''">
+                and CON_TYPE LIKE CONCAT('%',#{map.conType},'%')
+            </if>
+            <if test="map.essaySeries != null and map.essaySeries != ''">
+                and ESSAY_SERIES LIKE CONCAT('%',#{map.essaySeries},'%')
+            </if>
+            <if test="map.showOrder != null and map.showOrder != '' and map.showOrder == 'recomStart'">
+                order by RECOM_START desc
+            </if>
+            <if test="map.showOrder != null and map.showOrder != '' and map.showOrder == 'readCount'">
+                order by READ_COUNT desc
+            </if>
+            <if test="map.showOrder == null or map.showOrder == ''">
+                order by CREATE_DATA desc
+            </if>
+        </where>
+    </select>
+    <select id="readEssayInfoFun" parameterType="com.aliang.aliangbok_entity.userinfo.UserInfo" resultMap="essayDataId">
+        SELECT
+          e.ESSAY_ID,
+          e.ESSAY_F_CUUID,
+          e.USER_ID,
+          e.ESSAY_NUM,
+          e.CON_TEXT,
+          e.CON_TITLE,
+          e.CON_TYPE,
+          e.ESSAY_SERIES,
+          e.CAROUSEL_SHOW,
+          e.SHOW_BOX,
+          e.READ_COUNT,
+          e.RECOM_START,
+          e.CREATE_DATA,
+          e.UPDATE_DATA,
+          e.CON_F_TITLE,
+          e.CON_G_TEXT,
+          e.ARITICLE_STATE,
+          e.ARITICLE_PRIVATE,
+          e.TITLE_P_PICTURE,
+          e.CREATE_DATA,
+          e.UPDATE_DATA,
+          u.USER_NAME
+        FROM essay_list_table e left join user_info u on e.USER_ID = u.USER_ID WHERE ESSAY_ID = #{essayEntity.essayId}
+    </select>
+    <select id="getEssaySeriesList" resultType="java.lang.String">
+      SELECT essaySeries FROM (
+        SELECT ESSAY_SERIES as essaySeries, SUM(READ_COUNT) as red FROM essay_list_table WHERE ESSAY_NUM !='' GROUP BY ESSAY_SERIES
+      ) t where t.essaySeries != '' ORDER BY t.red desc
+    </select>
+    <select id="getEssayServiceTimeLineList" resultMap="essayDataId" parameterType="java.util.Map">
+       SELECT ESSAY_ID, CREATE_DATA, CON_TITLE FROM essay_list_table WHERE (null != ESSAY_NUM OR ESSAY_NUM != "") AND ARITICLE_PRIVATE = 'SWITCH_OFF' AND ARITICLE_STATE = 'SWITCH_ON' ORDER BY CREATE_DATA DESC
+    </select>
+
+</mapper>

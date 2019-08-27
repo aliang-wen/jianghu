@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.aliangbok_dao.headerpicture.HeaderPictureDao">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <resultMap id="headerPictureEntity" type="com.aliang.aliangbok_entity.headerpicture.HeaderPicture">
+        <id column="SMALL_PIC_ID" jdbcType="VARCHAR" property="smallPicId" />
+        <id column="SAMLL_PIC_INFO" property="samllPicInfo" jdbcType="VARCHAR" />
+        <id column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+        <id column="CREAT_TIME" jdbcType="TIMESTAMP" property="creatTime" />
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+    </resultMap>
+    <insert id="addHeaderPic" parameterType="com.aliang.aliangbok_entity.headerpicture.HeaderPicture">
+        INSERT INTO header_picture (SMALL_PIC_ID, SAMLL_PIC_INFO, USER_ID) VALUES (#{headerPicture.smallPicId}, #{headerPicture.samllPicInfo}, #{headerPicture.userId})
+    </insert>
+    <update id="updateHeaderPic" parameterType="com.aliang.aliangbok_entity.headerpicture.HeaderPicture">
+        UPDATE header_picture SET SAMLL_PIC_INFO = #{headerPicture.samllPicInfo} WHERE SMALL_PIC_ID = #{headerPicture.smallPicId}
+    </update>
+</mapper>

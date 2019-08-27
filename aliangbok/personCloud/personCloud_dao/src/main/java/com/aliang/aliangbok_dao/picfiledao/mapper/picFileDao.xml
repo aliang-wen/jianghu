@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.aliangbok_dao.picfiledao.PicFileDao">
+
+    <resultMap id="PicFileEntityMap" type="com.aliang.aliangbok_entity.picfileentity.PicFileEntity">
+        <result property="fileCuuId" column="FILE_CUUID"/>
+        <result property="essayFCuuId" column="ESSAY_F_CUUID"/>
+        <result property="fileName" column="FILE_NAME"/>
+        <result property="filePath" column="FILE_PATHE"/>
+        <result property="fileUrl" column="FILE_URL"/>
+        <result property="fileCreatTimme" column="FILE_CREAT_TIME"/>
+    </resultMap>
+
+    <insert id="addPicFile" parameterType="com.aliang.aliangbok_entity.picfileentity.PicFileEntity">
+        INSERT INTO file_info(FILE_CUUID, FILE_NAME, FILE_PATHE, FILE_URL, ESSAY_F_CUUID)
+          VALUES(#{picFileEntity.fileCuuId}, #{picFileEntity.fileName}, #{picFileEntity.filePath}, #{picFileEntity.fileUrl}, #{picFileEntity.essayFCuuId})
+    </insert>
+    <delete id="delPicFile" parameterType="com.aliang.aliangbok_entity.picfileentity.PicFileEntity">
+        DELETE FROM file_info WHERE FILE_CUUID = #{picFileEntity.fileCuuId}
+    </delete>
+    <delete id="delPicFileByEssayFCuuid" parameterType="com.aliang.aliangbok_entity.picfileentity.PicFileEntity">
+        DELETE FROM file_info WHERE ESSAY_F_CUUID = #{picFileEntity.essayFCuuId}
+    </delete>
+    <select id="findPicFileById" parameterType="com.aliang.aliangbok_entity.picfileentity.PicFileEntity" resultMap="PicFileEntityMap">
+      select FILE_CUUID, ESSAY_F_CUUID, FILE_NAME, FILE_PATHE, FILE_URL, FILE_CREAT_TIME from  file_info where  FILE_CUUID = #{picFileEntity.fileCuuId}
+    </select>
+</mapper>

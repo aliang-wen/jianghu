@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="personCloud_config:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ffa46c10-531c-470b-b5fc-b71ac6d7052c" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/personCloud_dao/target/" />
+    <ignored path="$PROJECT_DIR$/personCloud_service/target/" />
+    <ignored path="$PROJECT_DIR$/personCloud_config/target/" />
+    <ignored path="$PROJECT_DIR$/personCloud_web/target/" />
+    <ignored path="$PROJECT_DIR$/personCloud_config/personCloud_util/target/" />
+    <ignored path="$PROJECT_DIR$/personCloud_entity/target/" />
+    <ignored path="$PROJECT_DIR$/personCloud_util/target/" />
+    <ignored path="$PROJECT_DIR$/personCloud_until/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="personCloud" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="@Aspect" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>uploadHeaderPic</find>
+      <find>SMALL_PIC_ID</find>
+      <find>CUUID</find>
+      <find>updateHeaderPic</find>
+      <find>smallPicId</find>
+      <find>cuuid</find>
+      <find>skScore</find>
+      <find>tempNum</find>
+      <find>addBozhuSkill</find>
+      <find>findBokSkill</find>
+      <find>bokSkill</find>
+      <find>headerPictureEntity</find>
+      <find>findShowUserMainPageAboutMyself</find>
+      <find>findEssayListPageSer</find>
+      <find>findShowUserMainPage</find>
+      <find>getEssayServiceTimeLineList</find>
+      <find>findEssayEntity.setTitlePpicture</find>
+      <find>findEssayEntity.setConText</find>
+      <find>essayListTime</find>
+      <find>fileUrl</find>
+      <find>fileUrlReplace</find>
+      <find>&quot;数据修改成功&quot;</find>
+      <find>ARITICLE_STATE</find>
+      <find>essayDataId</find>
+      <find>findDictionaryOptionList</find>
+      <find>dicId</find>
+      <find>getUserInfo</find>
+      <find>finDictionaryOptioinAllListCon</find>
+      <find>finDictionaryOptioinAllList</find>
+      <find>DictionaryOptionList</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>jsonObject.has</replace>
+      <replace>&quot;&quot;</replace>
+      <replace>@PathVariable String appId, @RequestBody String params</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>G:\ideaTestWorkSpace\personCloud</dir>
+    </dirStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/essayservice/EssayService.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/personCloud_until/src/main/java/com/aliang/aliangbok_until/returnfun/ReturnFun.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/dictionaryoptiondao/DictionaryOptionDao.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/dictionaryoption/biz/DictionaryOptionServiceBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_entity/src/main/java/com/aliang/aliangbok_entity/essayentity/EssayEntity.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/essayservice/biz/EssayBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/readessayinfo/ReadEssayInfo.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/readessayinfo/biz/ReadEssayInfoController.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/chinaaredao/mapper/chinaArea.xml" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/picfiledao/mapper/picFileDao.xml" />
+        <option value="$PROJECT_DIR$/personCloud_config/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/personCloud_until/src/main/java/com/aliang/aliangbok_until/fileurlsetting/FileUrlSetting.java" />
+        <option value="$PROJECT_DIR$/personCloud_until/src/main/java/com/aliang/aliangbok_until/proputil/PropUtil.java" />
+        <option value="$PROJECT_DIR$/personCloud_config/src/main/resources/personCloudSetting.properties" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/pritucefileservice/PritureFileService.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/pritucefileservice/biz/PictureFileSerBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/pictureUploadController/PictureUploadController.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/headerpicture/HeaderPictureDao.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/loginbok/biz/LoginBokServiceBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/headerpiccontroller/biz/HeaderPicConBIz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/headerpiccontroller/biz/HeaderPicConBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/headerpiccontroller/HeaderPicController.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/maincontrol/MainControl.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/selfdata/selfData.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/headerpicservice/biz/HeaderPicBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/headerpiccontroller/biz/HeaderPicConBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/selfdataservice/SelfDataService.java" />
+        <option value="$PROJECT_DIR$/personCloud_entity/src/main/java/com/aliang/aliangbok_entity/headerpicture/HeaderPicture.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/headerpiccontroller/HeaderPicController.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/headerpicservice/HeaderPicService.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/headerpicture/mapper/HeaderPictureMapper.xml" />
+        <option value="$PROJECT_DIR$/personCloud_entity/src/main/java/com/aliang/aliangbok_entity/bozhuskill/BoZhuSkillEntity.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/bozhuskill_dao/BoZhuSkillDao.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/bozhuskill_service/biz/BoZhuSkillServiceBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/bozhuskill_service/BoZhuSkillService.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/bozhuskillcontroller/BoZhuSkillService.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/bozhuskill_dao/mapper/BoZhuSkillMappering.xml" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/bozhuskillcontroller/biz/BoZhuSkillConBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/bozhuskillcontroller/BoZhuSkillController.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/bozhuskillservice/BoZhuSkillService.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/userdao/UserDao.java" />
+        <option value="$PROJECT_DIR$/personCloud_entity/src/main/java/com/aliang/aliangbok_entity/userinfo/UserInfo.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/userdao/mapper/UserDao.xml" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/essaydao/EssayDao.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/mainpage/biz/MainPageBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/mainpagecontroller/biz/MainPageConBiz.java" />
+        <option value="$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/mainpagecontroller/MainPageController.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/essayservice/EssayService.java" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/essaydao/mapper/EssayXml.xml" />
+        <option value="$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/dictionaryoptiondao/mapper/DictionaryOptionDao.xml" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/mainpage/MainPage.java" />
+        <option value="$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/dictionaryoption/DictionaryOptionService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="G:/maven3.5.3/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="G:\maven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="personCloud_parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="personCloud_parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1945" />
+    <option name="height" value="1105" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563895829100" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15527344" />
+    <property name="project.structure.side.proportion" value="0.3752556" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\ideaTestWorkSpace\personCloud\personCloud_config\src\main" />
+      <recent name="G:\ideaTestWorkSpace\personCloud\personCloud_config\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\ideaTestWorkSpace\aliangbok\personCloud\personCloud_dao\src\main\java\com\aliang\aliangbok_dao\ase_dao\mapper" />
+      <recent name="G:\ideaTestWorkSpace\personCloud\personCloud_config\src\main\webapp" />
+      <recent name="G:\ideaTestWorkSpace\personCloud\personCloud_config\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.personCloud">
+    <configuration name="AESutil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aliang.aliangbok_until.aseutil.AESutil" />
+      <module name="personCloud_until" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aliang.aliangbok_until.aseutil.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Log4jTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aliang.aop.Log4jTest" />
+      <module name="personCloud_web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aliang.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginBok" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aliang.aliangbok_controller.login.LoginBok" />
+      <module name="personCloud_web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aliang.aliangbok_controller.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginBokService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aliang.aliangbok_service.loginbok.LoginBokService" />
+      <module name="personCloud_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aliang.aliangbok_service.loginbok.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ss" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aliang.personCloud_until.test.Ss" />
+      <module name="personCloud_until" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aliang.personCloud_until.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="personCloud" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="personCloud_config:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/personCloud" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_personCloud_4" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60217" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="personCloud_config:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AESutil" />
+        <item itemvalue="Application.Ss" />
+        <item itemvalue="Application.LoginBok" />
+        <item itemvalue="Application.LoginBokService" />
+        <item itemvalue="Application.Log4jTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\10484\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffa46c10-531c-470b-b5fc-b71ac6d7052c" name="Default Changelist" comment="" />
+      <created>1552274892444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552274892444</updated>
+      <workItem from="1552274896467" duration="10117000" />
+      <workItem from="1552294865266" duration="5586000" />
+      <workItem from="1552305478070" duration="3363000" />
+      <workItem from="1552309073144" duration="3827000" />
+      <workItem from="1552312958994" duration="1049000" />
+      <workItem from="1552319036257" duration="6484000" />
+      <workItem from="1552354013680" duration="5190000" />
+      <workItem from="1552359948311" duration="20878000" />
+      <workItem from="1552396051138" duration="9322000" />
+      <workItem from="1552440445178" duration="13699000" />
+      <workItem from="1552484161868" duration="31000" />
+      <workItem from="1552526510157" duration="3505000" />
+      <workItem from="1552540059079" duration="5950000" />
+      <workItem from="1552576883894" duration="91000" />
+      <workItem from="1552616443790" duration="4107000" />
+      <workItem from="1552651981428" duration="936000" />
+      <workItem from="1552655259587" duration="1008000" />
+      <workItem from="1552656494591" duration="1307000" />
+      <workItem from="1554114374695" duration="627000" />
+      <workItem from="1554206169126" duration="1276000" />
+      <workItem from="1554285660891" duration="3494000" />
+      <workItem from="1554292015584" duration="1682000" />
+      <workItem from="1554295634601" duration="6535000" />
+      <workItem from="1554367337263" duration="1479000" />
+      <workItem from="1554390591392" duration="1609000" />
+      <workItem from="1554455311969" duration="21273000" />
+      <workItem from="1554550219313" duration="279000" />
+      <workItem from="1554558656842" duration="2921000" />
+      <workItem from="1554687042825" duration="1307000" />
+      <workItem from="1554698651808" duration="6779000" />
+      <workItem from="1554715488146" duration="1127000" />
+      <workItem from="1554721244717" duration="1550000" />
+      <workItem from="1554793271578" duration="10452000" />
+      <workItem from="1554813721883" duration="8170000" />
+      <workItem from="1554901826138" duration="3497000" />
+      <workItem from="1554954171857" duration="3476000" />
+      <workItem from="1554984656856" duration="9249000" />
+      <workItem from="1554997362100" duration="2211000" />
+      <workItem from="1555070499335" duration="3264000" />
+      <workItem from="1555169680239" duration="1344000" />
+      <workItem from="1555390236377" duration="5879000" />
+      <workItem from="1555412769194" duration="4909000" />
+      <workItem from="1555418263765" duration="298000" />
+      <workItem from="1555426247364" duration="3306000" />
+      <workItem from="1555485847565" duration="7646000" />
+      <workItem from="1555501613840" duration="13057000" />
+      <workItem from="1555550512357" duration="3609000" />
+      <workItem from="1555585852241" duration="1265000" />
+      <workItem from="1555592475176" duration="5369000" />
+      <workItem from="1555637155717" duration="5713000" />
+      <workItem from="1555673922447" duration="19036000" />
+      <workItem from="1555862369892" duration="924000" />
+      <workItem from="1555897024517" duration="788000" />
+      <workItem from="1555933507334" duration="6987000" />
+      <workItem from="1555983962059" duration="7579000" />
+      <workItem from="1556017513009" duration="4781000" />
+      <workItem from="1556081049163" duration="1483000" />
+      <workItem from="1556180961450" duration="1231000" />
+      <workItem from="1556196004568" duration="1342000" />
+      <workItem from="1556243107299" duration="746000" />
+      <workItem from="1556330063377" duration="3071000" />
+      <workItem from="1556426174427" duration="12136000" />
+      <workItem from="1556458915183" duration="1650000" />
+      <workItem from="1556505210425" duration="1108000" />
+      <workItem from="1556757314719" duration="1377000" />
+      <workItem from="1556810136677" duration="605000" />
+      <workItem from="1556980017435" duration="1667000" />
+      <workItem from="1557030844494" duration="608000" />
+      <workItem from="1557057758612" duration="1835000" />
+      <workItem from="1557116771935" duration="670000" />
+      <workItem from="1557147955775" duration="9158000" />
+      <workItem from="1557192105892" duration="2132000" />
+      <workItem from="1557238013782" duration="6309000" />
+      <workItem from="1557282775901" duration="4844000" />
+      <workItem from="1557315825947" duration="7617000" />
+      <workItem from="1557365143381" duration="3065000" />
+      <workItem from="1557401568814" duration="612000" />
+      <workItem from="1557456031861" duration="4224000" />
+      <workItem from="1557555062723" duration="13724000" />
+      <workItem from="1557914716229" duration="673000" />
+      <workItem from="1557931421393" duration="2908000" />
+      <workItem from="1558020218573" duration="5444000" />
+      <workItem from="1558057973503" duration="7858000" />
+      <workItem from="1558150870150" duration="8794000" />
+      <workItem from="1558239035759" duration="12062000" />
+      <workItem from="1558348277395" duration="1329000" />
+      <workItem from="1558362182629" duration="4897000" />
+      <workItem from="1558409282173" duration="14242000" />
+      <workItem from="1558435257885" duration="689000" />
+      <workItem from="1558449075502" duration="2778000" />
+      <workItem from="1558488153567" duration="11027000" />
+      <workItem from="1558527264895" duration="5454000" />
+      <workItem from="1558584360994" duration="7665000" />
+      <workItem from="1558614727889" duration="2175000" />
+      <workItem from="1558708890838" duration="2559000" />
+      <workItem from="1558746181575" duration="4626000" />
+      <workItem from="1558786422436" duration="9350000" />
+      <workItem from="1558833314077" duration="11232000" />
+      <workItem from="1558885355976" duration="798000" />
+      <workItem from="1558920589778" duration="2019000" />
+      <workItem from="1558960808182" duration="1552000" />
+      <workItem from="1559011336319" duration="619000" />
+      <workItem from="1559042925874" duration="602000" />
+      <workItem from="1559106765766" duration="609000" />
+      <workItem from="1559185089699" duration="2599000" />
+      <workItem from="1559214551697" duration="8206000" />
+      <workItem from="1559268043864" duration="1866000" />
+      <workItem from="1559283978611" duration="10702000" />
+      <workItem from="1559322487294" duration="1789000" />
+      <workItem from="1559401072908" duration="7632000" />
+      <workItem from="1559524095136" duration="11432000" />
+      <workItem from="1559546186311" duration="5003000" />
+      <workItem from="1559563068982" duration="7405000" />
+      <workItem from="1559610396988" duration="13963000" />
+      <workItem from="1559651683140" duration="945000" />
+      <workItem from="1559698084392" duration="20136000" />
+      <workItem from="1559733185173" duration="9030000" />
+      <workItem from="1559783290823" duration="6666000" />
+      <workItem from="1560073805864" duration="5808000" />
+      <workItem from="1560087905809" duration="6069000" />
+      <workItem from="1560134235823" duration="4581000" />
+      <workItem from="1560179175223" duration="2433000" />
+      <workItem from="1560259282298" duration="2345000" />
+      <workItem from="1560437757729" duration="3470000" />
+      <workItem from="1560474926631" duration="540000" />
+      <workItem from="1560487845598" duration="606000" />
+      <workItem from="1560581779366" duration="5881000" />
+      <workItem from="1561351217844" duration="745000" />
+      <workItem from="1561645867310" duration="730000" />
+      <workItem from="1561695264647" duration="8594000" />
+      <workItem from="1561771305590" duration="5834000" />
+      <workItem from="1561820514970" duration="4487000" />
+      <workItem from="1561864861720" duration="5560000" />
+      <workItem from="1561946188975" duration="10575000" />
+      <workItem from="1561979860248" duration="6784000" />
+      <workItem from="1562031354271" duration="4008000" />
+      <workItem from="1562149745876" duration="133000" />
+      <workItem from="1562156197715" duration="629000" />
+      <workItem from="1562203973799" duration="15777000" />
+      <workItem from="1562250807128" duration="2493000" />
+      <workItem from="1562288891932" duration="8479000" />
+      <workItem from="1562392757470" duration="10445000" />
+      <workItem from="1562548030474" duration="3268000" />
+      <workItem from="1562596638123" duration="190000" />
+      <workItem from="1562597943291" duration="1297000" />
+      <workItem from="1562646628597" duration="6921000" />
+      <workItem from="1562677021644" duration="878000" />
+      <workItem from="1562678409463" duration="2862000" />
+      <workItem from="1562722129057" duration="8083000" />
+      <workItem from="1562775672247" duration="681000" />
+      <workItem from="1562838865581" duration="520000" />
+      <workItem from="1562845238352" duration="1286000" />
+      <workItem from="1562857946080" duration="1792000" />
+      <workItem from="1562893474718" duration="1294000" />
+      <workItem from="1562989178615" duration="2267000" />
+      <workItem from="1563157211179" duration="7317000" />
+      <workItem from="1563241542140" duration="16689000" />
+      <workItem from="1563325365239" duration="3799000" />
+      <workItem from="1563417829988" duration="16746000" />
+      <workItem from="1563447599522" duration="74000" />
+      <workItem from="1563447713281" duration="45000" />
+      <workItem from="1563448824871" duration="1762000" />
+      <workItem from="1563512445354" duration="1392000" />
+      <workItem from="1563684661427" duration="1422000" />
+      <workItem from="1563706759565" duration="7643000" />
+      <workItem from="1563758095070" duration="21167000" />
+      <workItem from="1563841007146" duration="8000" />
+      <workItem from="1563868651374" duration="315000" />
+      <workItem from="1563893525247" duration="2624000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1552576973266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552576973266</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1552659503844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552659503844</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1554299990055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554299990056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Page404_analyzeUrl - 2019.04.04 at 23h 17m 27s.xml">
+      <configuration name="Page404.analyzeUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Page404_analyzeUrl - 2019.04.04 at 23h 18m 33s.xml">
+      <configuration name="Page404.analyzeUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Page404_analyzeUrl - 2019.04.04 at 23h 19m 18s.xml">
+      <configuration name="Page404.analyzeUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Page404_analyzeUrl - 2019.04.04 at 23h 19m 32s.xml">
+      <configuration name="Page404.analyzeUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Page404_analyzeUrl - 2019.04.04 at 23h 20m 04s.xml">
+      <configuration name="Page404.analyzeUrl" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="821094000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78504676" visible="true" weight="0.15281501" />
+      <window_info id="Structure" order="1" sideWeight="0.39096266" side_tool="true" weight="0.13672923" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.21495327" side_tool="true" weight="0.19349681" />
+      <window_info id="Web" order="7" sideWeight="0.20070423" side_tool="true" weight="0.22319035" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36278448" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28514057" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32843792" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3239625" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32843792" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32931727" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32931727" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.1579652" />
+      <window_info anchor="bottom" id="Spring" order="15" weight="0.32928476" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24946696" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.16554959" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="jsonObject.map" />
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;&lt;p&gt;烦烦烦&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=\&quot;http://localhost:88/pictureFile/fb0067f0ac0a4fd199b95b9f6887517d/69b42483-6b12-4c85-88cd-56b215f3bc86.png\&quot; style=\&quot;max-width:100%;\&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=\&quot;http://localhost:88/pictureFile/fb0067f0ac0a4fd199b95b9f6887517d/7e4e4a9e-29f7-48d0-a9a1-5a742b9f71b9.jpg\&quot; style=\&quot;max-width:100%;\&quot;&gt;&lt;br&gt;&lt;/p&gt;&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>( &quot;aliang&quot;).equals(password)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(userfo.getPassword() + &quot;&quot;).equals(&quot;aliang&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(userfo.getPassword() + &quot;&quot;).equals(password + &quot;&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(userfo.getPassword())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(userfo.getPassword()).equals(password)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>password</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/baseinfo/BaseInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/pictureUploadController/PictureUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/headerpiccontroller/biz/HeaderPicConBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/essaycontroller/biz/EssayComtrollerBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/loginbok/LoginBokService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/loginbok/biz/LoginBokServiceBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/maincontrol/biz/MainControlBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/headerpicservice/biz/HeaderPicBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/selfdata/selfData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/headerpiccontroller/HeaderPicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="64" lean-forward="true" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/maincontrol/MainControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/headerpicture/HeaderPictureDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/headerpicture/mapper/HeaderPictureMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="16" column="99" selection-start-line="16" selection-start-column="99" selection-end-line="16" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/bozhuskill_dao/mapper/BoZhuSkillMapper" />
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/ase_dao/AseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/ase_dao/mapper/asemapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="67" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_entity/src/main/java/com/aliang/aliangbok_entity/headerpicture/HeaderPicture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/headerpicservice/HeaderPicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="46" column="131" selection-start-line="46" selection-start-column="131" selection-end-line="46" selection-end-column="131" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/dictionaryoption/biz/DictionaryOptionControllerBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/dictionaryoption/DictionaryOptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="29" column="98" selection-start-line="29" selection-start-column="98" selection-end-line="29" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_entity/src/main/java/com/aliang/aliangbok_entity/bozhuskill/BoZhuSkillEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/bozhuskillcontroller/biz/BoZhuSkillConBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/bozhuskillservice/biz/BoZhuSkillServiceBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/bozhuskillcontroller/BoZhuSkillController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/bozhuskillservice/BoZhuSkillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4152#4168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/selfdataservice/biz/SelfDataDerviceBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="86" lean-forward="true" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/bozhuskill_dao/mapper/BoZhuSkillMappering.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/bozhuskill_dao/BoZhuSkillDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/selfdataservice/SelfDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/userdao/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_entity/src/main/java/com/aliang/aliangbok_entity/userinfo/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3387#3388#0" expanded="true" />
+            <element signature="e#3427#3428#0" expanded="true" />
+            <element signature="e#3479#3480#0" expanded="true" />
+            <element signature="e#3511#3512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/essayservice/biz/EssayBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/userdao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_config/src/main/resources/mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/mainpagecontroller/biz/MainPageConBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/essaydao/EssayDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbokh_controller/essaycontroller/EssayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/essayservice/EssayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1016">
+          <caret line="347" column="12" selection-start-line="347" selection-start-column="12" selection-end-line="347" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/essaydao/mapper/EssayXml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1849">
+          <caret line="284" lean-forward="true" selection-start-line="284" selection-end-line="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_config/src/main/resources/personCloudSetting.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_config/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_config/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/mainpage/biz/MainPageBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/mainpage/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_web/src/main/java/com/aliang/aliangbok_controller/mainpagecontroller/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="59" column="68" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/dictionaryoption/biz/DictionaryOptionServiceBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/dictionaryoptiondao/mapper/DictionaryOptionDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_dao/src/main/java/com/aliang/aliangbok_dao/dictionaryoptiondao/DictionaryOptionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personCloud_service/src/main/java/com/aliang/aliangbok_service/dictionaryoption/DictionaryOptionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+          <folding>
+            <element signature="e#8068#8084#0" expanded="true" />
+            <element signature="e#8133#8149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>personCloud_config:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3752556" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19448276" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (personCloud_config)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3752556" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3752556" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3752556" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>personCloud_service</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3752556" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.alibaba:druid:1.1.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3752556" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19448276" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
+  </component>
+</project>

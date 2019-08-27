@@ -1,0 +1,87 @@
+#allPageListId {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 335px);
+  // border: 1px solid red;
+  .readRightPage {
+    width: 900px;
+    float: left; 
+    // border: 1px solid red;
+    .headerShow {
+      padding-left: 10px;
+      color: #999;
+      ul {
+        list-style: none;
+        li {
+          .ivu-tag-border {
+            height: 19px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+    .ivu-col-span-24 {
+      border-bottom: 1px dashed #ccc ;
+      padding: 10px 10px 5px;
+      height: 180px;
+      .showTitleNameClass {
+          margin-bottom: 5px;
+          width: 100%;
+          overflow:hidden;
+          text-overflow:ellipsis; 
+          white-space: nowrap;/*加宽度width属来兼容部分浏览*/
+          .bigTitle {
+              color: red;
+              font-size: 20px;
+              font-weight: 500;
+          }
+          .bigTitleName {
+              font-size: 16px;
+              color: #000;
+              font-weight: 500;
+          }
+      }
+      .picAtSexyToRecommend {
+          float: left;
+          margin-right: 16px;
+          img {
+            cursor: pointer;
+          }
+      }
+      .contAtSexyToRecommend {
+        float: left;
+        line-height: 24px;
+        width: 594px;
+        height: 124px;
+        p {
+          word-wrap:break-word;
+          overflow:hidden;
+          text-overflow:ellipsis; 
+          white-space: nowrap;/*加宽度width属来兼容部分浏览*/
+        }
+        span {
+          -webkit-line-clamp: 3;
+          display: -webkit-box;
+          -webkit-box-orient:vertical;
+          overflow:hidden;
+          text-overflow: ellipsis;
+          font-size: 12px;
+        }
+      }
+    }
+    .pageFen {
+      height: 36px;
+      .ivu-page {
+        float: right;
+      }
+    }
+  }
+  .showLeftPage {
+    width: 282px;
+    float: right; 
+    // border: 1px solid red;
+  }
+  .clear {
+    clear: both; 
+  }
+}

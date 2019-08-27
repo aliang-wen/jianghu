@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.aliangbok_dao.codetoken.CodeToken">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <resultMap id="codeEntity" type="com.aliang.aliangbok_entity.securitycode.SecurityCodeEntity">
+        <id column="TOKEN_CODE" jdbcType="VARCHAR" property="tokenCode" />
+        <id column="CODE" jdbcType="VARCHAR" property="code" />
+        <id column="CREAT_CODE_TIME" jdbcType="TIMESTAMP" property="creat_code_time" />
+    </resultMap>
+    <insert id="inertSecurityCode" parameterType="com.aliang.aliangbok_entity.securitycode.SecurityCodeEntity">
+        INSERT INTO code_token (TOKEN_CODE, CODE) VALUES (#{securityCodeEntity.tokenCode},#{securityCodeEntity.code});
+        </insert>
+
+    <select id="getCode" parameterType="java.lang.String" resultMap="codeEntity">
+        SELECT * FROM code_token WHERE TOKEN_CODE = #{codeToken}
+    </select>
+</mapper>

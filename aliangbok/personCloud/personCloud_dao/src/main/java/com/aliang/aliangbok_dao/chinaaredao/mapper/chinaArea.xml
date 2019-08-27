@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.aliangbok_dao.chinaaredao.ChianAreaDao">
+    <resultMap id="chinaAreaList1" type="com.aliang.aliangbok_entity.chianareaentity.ChinaAreaEntity">
+        <result property="value" column="AreaId1"/>
+        <result property="label" column="AreaName1"/>
+        <result property="AreaPid" column="AreaPid1"/>
+        <collection property="children" resultMap="chinaAreaList2"/>
+    </resultMap>
+    <resultMap id="chinaAreaList2" type="com.aliang.aliangbok_entity.chianareaentity.ChinaAreaEntity">
+        <result property="value" column="AreaId2"/>
+        <result property="label" column="AreaName2"/>
+        <result property="AreaPid" column="AreaPid2"/>
+        <collection property="children" resultMap="chinaAreaList3"/>
+    </resultMap>
+    <resultMap id="chinaAreaList3" type="com.aliang.aliangbok_entity.chianareaentity.ChinaAreaEntity">
+        <result property="value" column="AreaId3"/>
+        <result property="label" column="AreaName3"/>
+        <result property="AreaPid" column="AreaPid3"/>
+        <collection property="children" resultMap="chinaAreaList4"/>
+    </resultMap>
+    <resultMap id="chinaAreaList4" type="com.aliang.aliangbok_entity.chianareaentity.ChinaAreaEntity">
+        <result property="value" column="AreaId4"/>
+        <result property="label" column="AreaName4"/>
+        <result property="AreaPid" column="AreaPid4"/>
+    </resultMap>
+    <select id="getAllChinarea" resultMap="chinaAreaList1">
+        SELECT
+          c1.AreaId AreaId1,c1.AreaName AreaName1,c1.AreaPid AreaPid1,
+          c2.AreaId AreaId2,c2.AreaName AreaName2,c2.AreaPid AreaPid2,
+          c3.AreaId AreaId3,c3.AreaName AreaName3,c3.AreaPid AreaPid3,
+          c4.AreaId AreaId4,c4.AreaName AreaName4,c4.AreaPid AreaPid4
+          FROM china_area c1
+          LEFT JOIN china_area c2 ON c1.AreaId = c2.AreaPid
+          LEFT JOIN china_area c3 ON c2.Areaid = c3.AreaPid
+          LEFT JOIN china_area c4 ON c3.AreaId = c4.AreaPid
+          WHERE c1.AreaId = 0 AND c2.AreaId != 0
+    </select>
+</mapper>

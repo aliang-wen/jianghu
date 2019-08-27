@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.aliangbok_dao.userdao.UserDao">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <resultMap id="UserInfo" type="com.aliang.aliangbok_entity.userinfo.UserInfo">
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+        <id column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+        <id column="PASSWORD" jdbcType="VARCHAR" property="password" />
+        <id column="BIG_NAME" jdbcType="VARCHAR" property="bigName" />
+        <id column="USER_TEL" jdbcType="VARCHAR" property="userTel" />
+        <id column="ABOUT_MYSELF" jdbcType="VARCHAR" property="aboutMyself" />
+        <id column="QQ_NUMBER" jdbcType="VARCHAR" property="qqNumber" />
+        <id column="SEX" jdbcType="VARCHAR" property="sex" />
+        <id column="HOBBY" jdbcType="VARCHAR" property="hobby" />
+        <id column="USER_ADDRESS" jdbcType="VARCHAR" property="userAddress" />
+        <id column="LIMIT_LOGIN_NUM" jdbcType="NUMERIC" property="limitLoginNum" />
+        <id column="SHOW_MAIN_PAGE" jdbcType="VARCHAR" property="showMainPage" />
+        <id column="BOK_FLAG" jdbcType="VARCHAR" property="bokFlag" />
+        <id column="BOK_SKILL" jdbcType="VARCHAR" property="bokSkill" />
+        <association property="bokHeaderPic" resultMap="headerPictureEntity"></association>
+        <collection property="skillList" resultMap="bokSkill"></collection>
+    </resultMap>
+    <!--头像-->
+    <resultMap id="headerPictureEntity" type="com.aliang.aliangbok_entity.headerpicture.HeaderPicture">
+        <id column="SMALL_PIC_ID" jdbcType="VARCHAR" property="smallPicId" />
+        <id column="SAMLL_PIC_INFO" jdbcType="BLOB" property="samllPicInfo" />
+        <id column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+        <id column="CREAT_TIME" jdbcType="TIMESTAMP" property="creatTime" />
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+    </resultMap>
+    <!--技能-->
+    <resultMap id="bokSkill" type="com.aliang.aliangbok_entity.bozhuskill.BoZhuSkillEntity">
+        <id column="SK_ID" jdbcType="VARCHAR" property="skId" />
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+        <id column="SK_NAME" jdbcType="VARCHAR" property="skName" />
+        <id column="SK_SCORE" jdbcType="INTEGER" property="skScore" />
+        <id column="CREAT_TIME" jdbcType="DATE" property="creatTime" />
+        <id column="UPDATE_TIME" jdbcType="DATE" property="updateTime" />
+    </resultMap>
+    <!--登录的 时候调用的接口-->
+    <select id="findUserInfo" parameterType="com.aliang.aliangbok_entity.userinfo.UserInfo" resultMap="UserInfo">
+        SELECT
+          USER_ID,
+          USER_NAME,
+          PASSWORD,
+          LIMIT_LOGIN_NUM
+        FROM user_info WHERE USER_NAME=#{userInfo.userName}
+    </select>
+    <!--后台修改的时候的接口调用-->
+    <select id="findUserInfoById" parameterType="com.aliang.aliangbok_entity.userinfo.UserInfo" resultMap="UserInfo">
+        SELECT
+          u.USER_ID,
+          u.USER_NAME,
+          u.BIG_NAME,
+          u.USER_TEL,
+          u.ABOUT_MYSELF,
+          u.BOK_FLAG,
+          u.BOK_SKILL,
+          u.QQ_NUMBER,
+          u.SEX,
+          u.HOBBY,
+          u.USER_ADDRESS,
+          h.SMALL_PIC_ID,
+          h.SAMLL_PIC_INFO
+        FROM user_info as u left join header_picture as h on u.USER_ID = h.USER_ID WHERE u.USER_ID=#{userId}
+    </select>
+    <update id="updateUserInfoById" parameterType="com.aliang.aliangbok_entity.userinfo.UserInfo">
+        update user_info set
+          BIG_NAME=#{userInfo.bigName},
+          USER_TEL=#{userInfo.userTel},
+          ABOUT_MYSELF=#{userInfo.aboutMyself},
+          QQ_NUMBER=#{userInfo.qqNumber},
+          SEX=#{userInfo.sex},
+          HOBBY=#{userInfo.hobby},
+          USER_ADDRESS=#{userInfo.userAddress},
+          BOK_FLAG=#{userInfo.bokFlag},
+          BOK_SKILL=#{userInfo.bokSkill}
+        where USER_ID=#{userInfo.userId}
+    </update>
+    <update id="updateUserInfoByIdLimit" parameterType="com.aliang.aliangbok_entity.userinfo.UserInfo">
+        update user_info set
+        LIMIT_LOGIN_NUM= #{userInfo.limitLoginNum}
+        where USER_ID=#{userInfo.userId}
+    </update>
+    <!--这里是进行查询在首页进行展示的-->
+    <select id="findShowUserMainPage" resultMap="UserInfo">
+        SELECT
+          u.USER_NAME,
+          u.BIG_NAME,
+          u.USER_TEL,
+          u.ABOUT_MYSELF,
+          u.BOK_FLAG,
+          u.BOK_SKILL,
+          u.QQ_NUMBER,
+          u.SEX,
+          u.HOBBY,
+          u.USER_ADDRESS
+        FROM user_info as u WHERE u.SHOW_MAIN_PAGE='SWITCH_ON'
+    </select>
+    <select id="findShowUserMainPageAboutMyself" resultMap="UserInfo">
+        SELECT
+            u.USER_NAME,
+            u.BIG_NAME,
+            u.USER_TEL,
+            u.ABOUT_MYSELF,
+            u.BOK_FLAG,
+            u.BOK_SKILL,
+            u.QQ_NUMBER,
+            u.SEX,
+            u.HOBBY,
+            u.USER_ADDRESS,
+            h.SMALL_PIC_ID,
+            h.SAMLL_PIC_INFO,
+            bk.SK_NAME,
+            bk.SK_SCORE
+        FROM
+            user_info AS u
+            LEFT JOIN header_picture AS h ON u.USER_ID = h.USER_ID LEFT JOIN bok_skill AS bk ON u.USER_ID = bk.USER_ID
+        WHERE
+            u.SHOW_MAIN_PAGE = 'SWITCH_ON'
+    </select>
+</mapper>

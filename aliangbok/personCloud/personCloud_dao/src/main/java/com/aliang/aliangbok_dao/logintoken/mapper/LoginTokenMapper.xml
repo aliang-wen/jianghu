@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.aliangbok_dao.logintoken.LoginTokenDao">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <resultMap id="loginTokenEntity" type="com.aliang.aliangbok_entity.logintokenentity.LoginTokenEntity">
+        <id column="LOGIN_TOKEN" jdbcType="VARCHAR" property="loginToken" />
+        <id column="LOGIN_FLAG" jdbcType="VARCHAR" property="loginFlag" />
+        <id column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+    </resultMap>
+    <!--这里的数据库的字段名字应该与我的实体类的字段名字相同 所以这里我就不再建立数据库和实体类字段的对应关系了-->
+    <select id="getLoginTokenDao" parameterType="java.lang.String" resultMap="loginTokenEntity">
+      SELECT * FROM login_token_vir WHERE LOGIN_TOKEN = #{loginToken}
+    </select>
+    <insert id="insertLoginTokeDao" parameterType="com.aliang.aliangbok_entity.logintokenentity.LoginTokenEntity">
+        insert into login_token_vir(LOGIN_TOKEN) VALUES(#{loginTokenEntity.loginToken})
+    </insert>
+    <update id="updateLoginTokenDao" parameterType="com.aliang.aliangbok_entity.logintokenentity.LoginTokenEntity">
+        update login_token_vir set LOGIN_FLAG = #{loginTokenEntity.loginFlag} where LOGIN_TOKEN = #{loginTokenEntity.loginToken}
+    </update>
+
+</mapper>

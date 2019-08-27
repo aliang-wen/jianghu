@@ -1,0 +1,8 @@
+
+@font-face {  
+    /* 字体重新命名  字体地址 */
+  font-family: 'longyin';
+  src: url('./yidaizongshi/longyin.ttf');
+  font-weight: normal;  
+  font-style: normal;  
+}

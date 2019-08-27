@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+
+<mapper namespace="com.aliang.aliangbok_dao.ase_dao.AseDao">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <resultMap id="AseEntit" type="com.aliang.aliangbok_entity.aseentit.AseEntity">
+        <id column="ASE_ID" jdbcType="VARCHAR" property="aseId" />
+        <id column="ASE_KEY" jdbcType="VARCHAR" property="aseKey" />
+        <id column="ASE_IV" jdbcType="VARCHAR" property="aseIv" />
+        <id column="ASE_UPDATE_TIME" jdbcType="VARCHAR" property="aseTime" />
+    </resultMap>
+
+    <!--当时的设计思路 这里永远只有一条？？-->
+    <select id="getAseInfo" parameterType="java.lang.String" resultMap="AseEntit">
+        SELECT * FROM ase_table WHERE ASE_ID = #{appId}
+    </select>
+
+    <update id="updateAseInfo" parameterType="com.aliang.aliangbok_entity.aseentit.AseEntity">
+        UPDATE ase_table SET ASE_KEY = #{aseEntity.aseKey}, ASE_IV = #{aseEntity.aseIv}, ASE_UPDATE_TIME = #{aseEntity.aseTime} WHERE ASE_ID = #{aseEntity.aseId}
+    </update>
+</mapper>

@@ -1,0 +1,45 @@
+#selfDataId {
+  padding: 30px;
+  .changePicture {
+    color: #0066FF;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 60px;
+  }
+  .changUserInfoClass {
+    float: right;
+    color: #0066FF;
+    cursor: pointer;
+  }
+  .showUserInfo {
+    .ivu-form-item-label {
+      font-size: 14px;
+      color: #ccc
+    }
+    .ivu-form-item-content {
+      font-size: 14px;
+      color: #000;
+    }
+  }
+  .ivu-avatar-large {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+  }
+  .editUserClass {
+    .ivu-modal-body {
+      height: 64vh;
+      overflow: auto; 
+    }
+  }
+  .showSkilsClass {
+    padding: 1px;
+    .addskillsButtonClass {
+      float: right;
+    }
+  }
+}

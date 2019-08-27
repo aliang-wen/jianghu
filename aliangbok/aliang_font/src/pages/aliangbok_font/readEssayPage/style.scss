@@ -1,0 +1,86 @@
+#readEssayPageId {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 335px);
+  .readRightPage {
+    width: 900px;
+    float: left;
+    border-left: 1px dotted #ccc;
+    border-right: 1px dotted #ccc;
+    padding: 5px;
+    .essayTitl {
+      text-align: center;
+    }
+    .essayFTitle {
+      color: #999;
+      height: 20px;
+      width: 100%;
+      h5 {
+        float: right;
+        margin-right: 10vw;
+      }
+    }
+    .showInfoEssay {
+      height: 20px;
+      font-size: 10px;
+      font-weight: 500;
+      margin-left: 8vw;
+      * {
+        margin: 0;
+        padding: 0;
+        list-style:none;
+      }
+      ul {
+        li {
+          float: left;
+          margin-left: 2vw;
+          span {
+            color: #cfcc56;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .titlePpicture {
+      background-color: rgba($color: #708090, $alpha: 0.4);
+      border-radius: 5px;
+      min-height: 140px;
+      word-wrap:break-word;
+      text-indent:35px;
+      padding: 5px;
+      font-size: 12px;
+      img {
+        // float: left;
+        border-radius: 5px;
+      }
+    }
+    .pageEssayRead {
+      margin-top: 10px;
+    }
+  }
+  .showLeftPage {
+    width: 282px;
+    float: right;
+    ul {
+      li {
+        list-style: none;
+        line-height: 26px;
+        font-size: 12px;
+        overflow:hidden;
+        text-overflow:ellipsis; 
+        white-space: nowrap;/*加宽度width属来兼容部分浏览*/ 
+      }
+    }
+    .jing {
+      color: red;
+      font-size: 14px;
+      padding-right: 5px;
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+  .clear {
+    clear: both; 
+  }
+}

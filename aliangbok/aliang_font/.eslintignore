@@ -1,0 +1,10 @@
+/build/*.js
+/config/*.js
+/dist/
+/*.js
+/test/unit/coverage/
+src/assets
+static/*
+node_modules/
+/src/router/*
+/src/utils/hy/beautifulHtml*

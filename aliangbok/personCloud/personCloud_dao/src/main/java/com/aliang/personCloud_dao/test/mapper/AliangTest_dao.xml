@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.personCloud_dao.test.AliangTest_dao">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <resultMap id="AliangTest_entity" type="com.aliang.personCloud_entity.test.AliangTest_entity">
+        <id column="t_id" jdbcType="VARCHAR" property="ad_id" />
+        <id column="t_username" jdbcType="VARCHAR" property="ad_username" />
+        <id column="t_password" jdbcType="VARCHAR" property="ad_password" />
+        <id column="t_phone" jdbcType="VARCHAR" property="ad_phone" />
+        <id column="t_name" jdbcType="VARCHAR" property="ad_name" />
+    </resultMap>
+    <select id="findAliangbok" parameterType="com.aliang.personCloud_entity.test.AliangTest_entity" resultMap="AliangTest_entity">
+        SELECT * FROM test WHERE t_username=#{aliangTestEntity.ad_username} AND t_password=#{aliangTestEntity.ad_password}
+    </select>
+</mapper>

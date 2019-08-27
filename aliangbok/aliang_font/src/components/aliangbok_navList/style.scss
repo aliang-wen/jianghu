@@ -1,0 +1,110 @@
+#mainPageHeader {
+  .navBackground {
+    background-color:#1C2327;
+  }
+  .colorShow {
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    height: 5px;
+    width: 100%;
+  }
+  .navzhongjian{
+    margin: 0 auto;
+    width: 1200px;
+    height: 60px;
+    .bok_nameDiv {
+      float: left;
+      .bok_nameClass {
+        cursor: pointer;
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        font-family: longyin;
+        color: #fff;
+        font-size: 30px;
+      }
+    }
+    .navLsit{
+      float: left;
+      margin-left: 50px;
+    }
+    .findClass{
+      float: right;
+      .searchClass {
+        margin-top: 20px;
+        color: #fff;
+        font-size: 26px;
+        cursor:pointer;
+      }
+    }
+  }
+  .searchwid{
+    width: 1200px;
+    margin: 0 auto;
+    .searchDiv {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #fff; 
+      .searchDivH{
+        height: 80px;
+        .searchTop, .searchButton {
+          height: 20px;
+        }
+        .searchModdle{
+          margin: 0 auto;
+          width: 50%;
+          height: 40px;
+          line-height: 40px;
+          .ivu-select{
+            width: 80%;
+          }
+          .findButton {
+            border-color: #1C2327 !important;
+            background-color: #1C2327 !important;
+            height: 36px;
+          }
+         
+        }
+        
+      }
+    }
+  }
+  
+  .closeC{
+    float: right;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-top: 2px;
+    cursor:pointer;
+  }
+
+  // 这里是修改原生样式
+  .ivu-menu-dark {
+    /* 导航条的背景 */
+    background: #1C2327;
+  }
+  .ivu-menu {
+    /* 导航栏菜单下拉选的字体大小 */
+    font-size: 15px;
+  }
+  .ivu-menu-item {
+    /* 导航栏菜单除了下拉选之外的字体大小  */
+    font-size: 15px;
+  }
+  .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item-active, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu:hover {
+    color: #00c1de;
+  }
+  .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu {
+    color: #fff;
+  }
+  .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-item-active {
+    color: #00c1de;
+  }
+  .ivu-select-dropdown {
+    background-color: #1C2327;
+    border-radius: 0;
+  }
+  .ivu-menu-item-group-title {
+    color: #aaa;
+    font-size: 14px;
+  }
+}

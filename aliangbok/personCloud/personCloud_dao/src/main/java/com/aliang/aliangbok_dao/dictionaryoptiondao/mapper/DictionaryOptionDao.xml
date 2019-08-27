@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+<mapper namespace="com.aliang.aliangbok_dao.dictionaryoptiondao.DictionaryOptionDao">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <!--这里的数据库的字段名字应该与我的实体类的字段名字相同 所以这里我就不再建立数据库和实体类字段的对应关系了-->
+    <resultMap id="dictionaryOption1" type="com.aliang.aliangbok_entity.dictionaryoptionentity.DictionaryOptionEntity">
+        <result property="value" column="dicId1"/>
+        <result property="label" column="dicName1"/>
+        <result property="description" column="description1"/>
+        <result property="dicPid" column="dicPid1"/>
+        <result property="updateTime" column="updateTime1"/>
+        <result property="creatTime" column="creatTime1"/>
+        <collection property="children" resultMap="dictionaryOption2"/>
+    </resultMap>
+    <resultMap id="dictionaryOption2" type="com.aliang.aliangbok_entity.dictionaryoptionentity.DictionaryOptionEntity">
+        <result property="value" column="dicId2"/>
+        <result property="label" column="dicName2"/>
+        <result property="description" column="description2"/>
+        <result property="dicPid" column="dicPid2"/>
+        <result property="updateTime" column="updateTime2"/>
+        <result property="creatTime" column="creatTime2"/>
+        <collection property="children" resultMap="dictionaryOption3"/>
+    </resultMap>
+    <resultMap id="dictionaryOption3" type="com.aliang.aliangbok_entity.dictionaryoptionentity.DictionaryOptionEntity">
+    </resultMap>
+    <insert id="addDictionaryOption" parameterType="com.aliang.aliangbok_entity.dictionaryoptionentity.DictionaryOptionEntity">
+      insert into dictionary_option(dicId, dicName,dicPid, description ) values (#{dictionaryOptionEntity.value},#{dictionaryOptionEntity.label},#{dictionaryOptionEntity.dicPid}, #{dictionaryOptionEntity.description })
+    </insert>
+    <delete id="delDictionaryOption" parameterType="com.aliang.aliangbok_entity.dictionaryoptionentity.DictionaryOptionEntity">
+        DELETE FROM dictionary_option WHERE dicId=#{dictionaryOptionEntity.value};
+    </delete>
+    <update id="updateDictionaryOption" parameterType="com.aliang.aliangbok_entity.dictionaryoptionentity.DictionaryOptionEntity">
+        update dictionary_option set dicName=#{dictionaryOptionEntity.dicName} where dicId=#{dictionaryOptionEntity.dicId}
+    </update>
+    <select id="finDictionaryOptioin" parameterType="java.util.Map" resultMap="dictionaryOption1">
+
+        SELECT t1.*,
+              d2.dicId dicId2,
+              d2.dicName dicName2,
+              d2.dicPid dicPid2,
+              d2.description description2,
+              d2.updateTime updateTime2,
+              d2.creatTime creatTime2
+        FROM
+          (SELECT
+                d1.dicId dicId1,
+                d1.dicName dicName1,
+                d1.dicPid dicPid1,
+                d1.description description1,
+                d1.updateTime updateTime1,
+                d1.creatTime creatTime1
+            FROM dictionary_option d1
+            <where>
+                d1.dicPid='0' AND d1.dicId LIKE concat('%',#{map.dicType},'%')
+                <if test="map.arr!=null and map.arr.length > 0">
+                    AND d1.dicId in
+                    <foreach collection="map.arr" item="item" index="index" open="(" close=")" separator=",">
+                        #{item}
+                    </foreach>
+                </if>
+            </where>
+             ORDER BY  d1.creatTime
+          ) t1
+        LEFT JOIN dictionary_option d2 ON t1.dicId1 = d2.dicPid
+    </select>
+
+    <!--这里是字典项树状结构的查询 我进行的是先分页 再进行做关联 分页插件因该是无法使用-->
+    <select id="finDictionaryOptioinTable" parameterType="java.util.Map" resultMap="dictionaryOption1">
+
+        SELECT t1.*,
+        d2.dicId dicId2,
+        d2.dicName dicName2,
+        d2.dicPid dicPid2,
+        d2.description description2,
+        d2.updateTime updateTime2,
+        d2.creatTime creatTime2
+        FROM
+        (SELECT
+        d1.dicId dicId1,
+        d1.dicName dicName1,
+        d1.dicPid dicPid1,
+        d1.description description1,
+        d1.updateTime updateTime1,
+        d1.creatTime creatTime1
+        FROM dictionary_option d1
+        <where>
+            d1.dicPid='0'
+            <if test="map.type != null and map.type != ''">
+                AND d1.dicId LIKE CONCAT(#{map.type},'%')
+            </if>
+            <if test="map.optionKey != null and map.optionKey != ''">
+                AND d1.dicId LIKE CONCAT('%',#{map.optionKey},'%')
+            </if>
+            <if test="map.optionName != null and map.optionName != ''">
+                AND d1.dicName LIKE CONCAT('%',#{map.optionName},'%')
+            </if>
+        </where>
+        ORDER BY  d1.creatTime
+        LIMIT #{map.startIndex}, #{map.endIndex}
+        ) t1
+        LEFT JOIN dictionary_option d2 ON t1.dicId1 = d2.dicPid
+    </select>
+
+<!--没有登录的时候进行调用的接口-->
+    <select id="finDictionaryOptioinAllList" parameterType="java.util.Map" resultMap="dictionaryOption1">
+
+        SELECT t1.*,
+        d2.dicId dicId2,
+        d2.dicName dicName2,
+        d2.dicPid dicPid2,
+        d2.description description2,
+        d2.updateTime updateTime2,
+        d2.creatTime creatTime2
+        FROM
+        (SELECT
+        d1.dicId dicId1,
+        d1.dicName dicName1,
+        d1.dicPid dicPid1,
+        d1.description description1,
+        d1.updateTime updateTime1,
+        d1.creatTime creatTime1
+        FROM dictionary_option d1
+--         WHERE  d1.dicPid='0'
+        <where>
+            d1.dicPid='0' AND d1.dicId LIKE concat('%',#{map.dicType},'%')
+            <if test="map.arr!=null and map.arr.length > 0">
+                AND d1.dicId in
+                <foreach collection="map.arr" item="item" index="index" open="(" close=")" separator=",">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+        ORDER BY  d1.creatTime
+        ) t1
+        LEFT JOIN dictionary_option d2 ON t1.dicId1 = d2.dicPid
+    </select>
+
+
+
+    <select id="finDictionaryOptioinTableNum" parameterType="java.util.Map" resultType="java.lang.Integer">
+        SELECT COUNT(1) FROM dictionary_option d1
+        <where>
+            d1.dicPid='0'
+            <if test="map.type != null and map.type != ''">
+                AND d1.dicId LIKE CONCAT(#{map.type},'%')
+            </if>
+            <if test="map.arr!=null and map.arr.length > 0">
+                AND d1.dicId in
+                <foreach collection="map.arr" item="item" index="index" open="(" close=")" separator=",">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>

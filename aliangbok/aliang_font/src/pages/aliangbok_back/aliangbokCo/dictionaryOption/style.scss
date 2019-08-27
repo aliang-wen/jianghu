@@ -1,0 +1,34 @@
+#dictionaryOptionId {
+  padding:  10px;
+  .tree-ctrl{
+    .ivu-icon{
+    font-size: 12px;
+    color: #2196f3;
+    border: 1px solid #2196f3;
+    cursor: pointer;
+    }
+  }
+  .tablesClass{
+    padding: 1px;
+    .findClass{
+      height: 60px;
+      margin-top: 20px;
+      width: 100%;
+      .ivu-form .ivu-form-item-label{
+        font-size: 12px;
+      }
+      .ivu-form-item {
+        float: right;
+      }
+    }
+    .pageChangeClass {
+      margin-top: 10px;
+      .ivu-page{
+        float: right;
+      }
+    }
+  }
+  .showCommon {
+    padding: 1px;
+  }
+}

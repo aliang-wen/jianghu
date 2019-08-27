@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--一个映射文件对应一实体类的dao接口-->
+
+<mapper namespace="com.aliang.aliangbok_dao.bozhuskill_dao.BoZhuSkillDao">
+    <!--这里的映射是将AliangTest_dao中的属性与数据库字段对应-->
+    <resultMap id="bokSkill" type="com.aliang.aliangbok_entity.bozhuskill.BoZhuSkillEntity">
+        <id column="SK_ID" jdbcType="VARCHAR" property="skId" />
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+        <id column="SK_NAME" jdbcType="VARCHAR" property="skName" />
+        <id column="SK_SCORE" jdbcType="INTEGER" property="skScore" />
+        <id column="CREAT_TIME" jdbcType="DATE" property="creatTime" />
+        <id column="UPDATE_TIME" jdbcType="DATE" property="updateTime" />
+    </resultMap>
+    <insert id="addBozhuSkill" parameterType="com.aliang.aliangbok_entity.bozhuskill.BoZhuSkillEntity">
+        INSERT INTO bok_skill(SK_ID, USER_ID, SK_NAME, SK_SCORE) VALUES (#{boZhuSkillEntity.skId}, #{boZhuSkillEntity.userId}, #{boZhuSkillEntity.skName},#{boZhuSkillEntity.skScore})
+    </insert>
+    <update id="updateBozhuSkill" parameterType="com.aliang.aliangbok_entity.bozhuskill.BoZhuSkillEntity">
+        UPDATE bok_skill SET SK_NAME = #{boZhuSkillEntity.skName},SK_SCORE = #{boZhuSkillEntity.skScore} WHERE SK_ID = #{boZhuSkillEntity.skId}
+    </update>
+    <delete id="delBozhuSkill" parameterType="com.aliang.aliangbok_entity.bozhuskill.BoZhuSkillEntity">
+        DELETE FROM bok_skill WHERE SK_ID = #{boZhuSkillEntity.skId}
+    </delete>
+    <select id="findBoZhuSkills" parameterType="com.aliang.aliangbok_entity.bozhuskill.BoZhuSkillEntity" resultMap="bokSkill">
+        SELECT SK_ID, SK_NAME, SK_SCORE FROM bok_skill WHERE USER_ID = #{boZhuSkillEntity.userId}
+    </select>
+
+</mapper>
