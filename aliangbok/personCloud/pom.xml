@@ -24,7 +24,7 @@
       <!--Java单元测试工具junit-->
       <junit.version>4.12</junit.version>
       <!--spring版本-->
-      <spring.version>5.1.5.RELEASE</spring.version>
+      <spring.version>5.3.18</spring.version>
       <!--mybatis-->
       <mybatis.version>3.4.6</mybatis.version>
       <!--mybatis.spring-->
